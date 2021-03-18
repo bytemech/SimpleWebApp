@@ -12,6 +12,11 @@ public class QueryProcessor {
                     "which was later acquired by the Oracle Corporation, that provides a system for developing application software "+
                     "and deploying it in a cross-platform computing environment.";
         }
+        if (query.toLowerCase().contains("heroku")) {
+            return "Heroku is a cloud platform as a service (PaaS) supporting several programming languages. " +
+            "One of the first cloud platforms, Heroku has been in development since June 2007, when it supported only the Ruby " +
+            "programming language, but now supports Java, Node.js, Scala, Clojure, Python, PHP, and Go.";
+        }
         return "";
     }
 }
